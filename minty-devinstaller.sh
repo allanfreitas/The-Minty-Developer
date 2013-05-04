@@ -115,7 +115,7 @@ if [[ ! $checkExpect ]]; then
     sudo apt-get -y install expect
 fi
 
-read -p "Please confirm your password: " passwd
+read -p "Please confirm your password: " -r -s passwd
 export passwd
 
 # edit sudoers so that user wont need to provide password when doing sudo
