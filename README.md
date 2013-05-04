@@ -7,7 +7,7 @@ A painless Post Installation Script for Linux Mint for Web Developers
 ### Installation
 To install make sure you've updated your Mint and then copy and paste this command into terminal:
 
-    wget https://raw.github.com/villimagg/the-minty-developer/develop/minty-devinstaller.sh && chmod +x minty-devinstaller.sh && ./minty-devinstaller.sh && rm minty-devinstaller.sh
+    wget https://raw.github.com/villimagg/The-Minty-Developer/master/minty-devinstaller.sh && chmod +x minty-devinstaller.sh && ./minty-devinstaller.sh && rm minty-devinstaller.sh
 
 This script is meant to be run **once** after a fresh install of Linux Mint 13/14, but if you want to run it again go right ahead :)
 
