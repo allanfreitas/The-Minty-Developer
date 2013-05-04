@@ -1,0 +1,35 @@
+#!/bin/bash
+
+if [ -f "./artisan" ]; then
+        php artisan "$@"
+else
+
+        if [ "$1" == "new" ]; then
+	
+				if [ ! `which git` ]; then 
+					echo "For this installer to work you'll need to install Git."
+	                echo '        http://git-scm.com/'
+				fi
+				
+                git clone -b develop --recursive git://github.com/laravel/laravel.git "./$2";
+        	cd "$2";
+                git reset --hard HEAD
+
+                # Do the house cleaning
+                chmod -R 0777 app/storage
+                if [ ! "./composer" ]; then
+                    echo "Composer not detected. Fetching it..."
+                    curl -s https://getcomposer.org/installer | php
+                    sudo mv composer.phar /usr/bin/composer;
+                    echo "Composer now available as a command."
+                fi
+        		composer self-update
+        		COMPOSER_PROCESS_TIMEOUT=4000 composer install
+                php artisan key:generate
+
+        else
+                echo 'This is not a valid laravel installation so artisan is a bit lost.'
+                echo '        http://laravel.com/docs/install#installation'
+
+        fi
+fi
