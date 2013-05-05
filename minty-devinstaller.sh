@@ -290,7 +290,7 @@ sudo pip install --upgrade httpie
 
 # lamp stack
 sudo apt-fast -y install apache2
-sudo apt-fast -y install mysql-server
+sudo apt-fast -y install mysql-server mysql-client
 sudo apt-fast -y install php5 libapache2-mod-php5 php5-mcrypt php5-curl php5-ffmpeg php5-geoip php5-imagick php5-imap php5-intl php5-sqlite php5-xdebug php5-xmlrpc php5-xsl php-gettext php-apc php-pear
 sudo /etc/init.d/apache2 restart
 sudo apt-fast -y install libapache2-mod-auth-mysql php5-mysql phpmyadmin
