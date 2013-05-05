@@ -325,8 +325,8 @@ then
 	sudo a2enmod userdir
 	sudo rm /etc/apache2/mods-enabled/userdir.conf
 	sudo rm /etc/apache2/mods-available/php5.conf
-	sudo wget https://raw.github.com/villimagg/the-minty-developer/master/apache2-mods/userdir.conf -P /etc/apache2/mods-enabled/
-	sudo wget https://raw.github.com/villimagg/the-minty-developer/master/apache2-mods/php5.conf -P /etc/apache2/mods-available/
+	sudo wget https://raw.github.com/villimagg/The-Minty-Developer/master/apache2-mods/userdir.conf -P /etc/apache2/mods-enabled/
+	sudo wget https://raw.github.com/villimagg/The-Minty-Developer/master/apache2-mods/php5.conf -P /etc/apache2/mods-available/
 	sudo service apache2 restart
 	cd ~/ && touch $HOME/sites/phpinfo.php
 	echo "<?php phpinfo();" >> $HOME/sites/phpinfo.php
@@ -340,11 +340,11 @@ sudo mkdir "/opt/phpunit"
 cd "/opt/phpunit"
 
 # dl phpunit composer.json
-sudo wget https://raw.github.com/villimagg/the-minty-developer/master/phpunit/composer.json
+sudo wget https://raw.github.com/villimagg/The-Minty-Developer/master/phpunit/composer.json
 sudo composer install
 
 # get artisan command script
-cd ~/tmp && wget https://raw.github.com/villimagg/the-minty-developer/master/artisan
+cd ~/tmp && wget https://raw.github.com/villimagg/The-Minty-Developer/master/artisan
 chmod +x ./artisan && sudo mv ./artisan /usr/bin/
 
 # if using cinnamon desktop get the web developer lamp start/stop tool
@@ -386,7 +386,7 @@ cd "Package Control"
 git checkout python3
 
 # get a customized .bashrc script
-cd ~/ && rm .bashrc && wget https://raw.github.com/villimagg/the-minty-developer/master/.bashrc
+cd ~/ && rm .bashrc && wget https://raw.github.com/villimagg/The-Minty-Developer/master/.bashrc
 source ~/.bashrc
 
 # final update
