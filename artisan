@@ -24,7 +24,8 @@ else
                     echo "Composer now available as a command."
                 fi
         		sudo composer self-update
-        		COMPOSER_PROCESS_TIMEOUT=4000 composer install
+                #COMPOSER_PROCESS_TIMEOUT=4000 composer install
+                composer install
                 php artisan key:generate
 
         else

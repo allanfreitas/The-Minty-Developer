@@ -334,10 +334,10 @@ fi
 
 # get composer
 cd ~/ && curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar "/usr/bin/composer"
+sudo mv composer.phar "/usr/local/bin/composer"
 
-sudo mkdir "/opt/phpunit"
-cd "/opt/phpunit"
+sudo mkdir "/usr/local/etc/phpunit"
+cd "/usr/local/etc/phpunit"
 
 # dl phpunit composer.json
 sudo wget https://raw.github.com/villimagg/The-Minty-Developer/master/phpunit/composer.json
@@ -345,7 +345,7 @@ sudo composer install
 
 # get artisan command script
 cd ~/tmp && wget https://raw.github.com/villimagg/The-Minty-Developer/master/artisan
-chmod +x ./artisan && sudo mv ./artisan /usr/bin/
+chmod +x ./artisan && sudo mv ./artisan /usr/local/bin/
 
 # if using cinnamon desktop get the web developer lamp start/stop tool
 # enable in Cinnamon Settings > Applets
