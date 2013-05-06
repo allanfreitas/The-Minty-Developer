@@ -23,7 +23,7 @@ else
                     sudo mv composer.phar /usr/bin/composer;
                     echo "Composer now available as a command."
                 fi
-        		composer self-update
+        		sudo composer self-update
         		COMPOSER_PROCESS_TIMEOUT=4000 composer install
                 php artisan key:generate
 
