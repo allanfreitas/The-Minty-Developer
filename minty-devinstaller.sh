@@ -127,7 +127,7 @@ echo -e ""
 # Default to Yes if the user presses enter without giving an answer:
 if ask "Add me to the sudoers so my life becomes easier? " Y; then
     expect -c '
-    spawn su -c "echo \"$env(user) ALL=(ALL) ALL\" >> /etc/sudoers"
+    spawn su -c "echo \"$env(user) ALL=(ALL:ALL) ALL\" >> /etc/sudoers"
     expect "Password:"
     send "$env(passwd)\r"
     spawn su -c "echo \"$env(user) ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers"
