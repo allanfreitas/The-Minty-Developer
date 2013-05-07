@@ -347,6 +347,13 @@ sudo composer install
 cd ~/tmp && wget https://raw.github.com/villimagg/The-Minty-Developer/master/artisan
 chmod +x ./artisan && sudo mv ./artisan /usr/local/bin/
 
+# Composer creates a ~/.composer/ directory for caching
+# Making sure ~/.composer/ directory is owned by $USER and not ROOT since otherwise users can't composer install
+if [[ ! -d ~/.composer/ ]]; then
+    mkdir ~/.composer
+fi
+sudo chown $USER:$USER -R $HOME/.composer/
+
 # if using cinnamon desktop get the web developer lamp start/stop tool
 # enable in Cinnamon Settings > Applets
 if [ ! -d ~/.local ]; then 
