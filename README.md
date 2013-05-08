@@ -189,6 +189,20 @@ The command then pulls down the latest build of Laravel 4 and stores it under th
 
 Then cd into your new project folder and use artisan without typing ```php``` before typing ```artisan```. That way it becomes much nicer developing using the artisan tool which ships with Laravel.
 
+---
+
+## The ```mktouch``` command
+
+- ```mktouch newfoldername/newfilename.php``` will create the folder with the file inside it.
+- ```mktouch parent/sub-parent/filename.php``` also works fine.
+
+## Compass aliases for generating sass or foundation projects
+
+- ```compass:sass somename``` ="compass create compass-sass -r bootstrap-sass --using bootstrap"
+- ```compass:foundation somename``` ="compass create compass-foundation -r zurb-foundation --using foundation"
+
+---
+
 ## Command Line aliases
 - ls='ls --color=auto'
 - dir='dir --color=auto'
@@ -206,15 +220,6 @@ Then cd into your new project folder and use artisan without typing ```php``` be
 - update='sudo aptitude update && sudo aptitude upgrade -y'
 - p="phpunit --colors"
 - alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-Plus a **mktouch** command: ```mktouch newfoldername/newfilename.php``` will create the folder with the file inside it.
-```mktouch parent/sub-parent/filename.php``` also works fine.
-
-## Compass aliases for generating sass or foundation projects
-```compass:sass somename``` ="compass create compass-sass -r bootstrap-sass --using bootstrap"
-
-```compass:foundation somename``` ="compass create compass-foundation -r zurb-foundation --using foundation"
-
 
 ### What next?
 
@@ -234,12 +239,7 @@ You've got all the latest development tools installed and there's nothing to sto
 # TODO
 
 - Add some easy commands to easily update the whole development environment and/or parts of it
-- Find a better solution for Python development so users wont need sudo
-- Add some frameworks (Django, Rails...)
-- Make the script compatible with more linux distributions
-- Make this scipt solid so that once a developer has run it he wont ever need to do anything but develop applications on his machine.
 - Get more people involved for prosperous development of this script
-
 
 
 

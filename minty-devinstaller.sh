@@ -406,7 +406,7 @@ source $HOME/.rvm/scripts/rvm
 echo ""
 echo -e "${green}Fetching some userful ruby gems..."
 echo ""
-gem install compass guard guard-phpunit guard-livereload guard-sass guard-coffeescript guard-jasmine guard-haml jsmin cssmin zurb-foundation bootstrap-sass bundler bourbon notify rb-inotify libnotify
+gem install compass guard guard-phpunit guard-livereload guard-sass guard-coffeescript guard-jasmine guard-haml guard-concat jsmin cssmin zurb-foundation bootstrap-sass bundler bourbon notify rb-inotify libnotify
 
 
 if [[ $kernel == "x86_64" ]]; then

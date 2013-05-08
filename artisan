@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ -f "./artisan" ]; then
         php artisan "$@"
@@ -12,7 +12,7 @@ else
 				fi
 				
                 git clone -b develop --recursive git://github.com/laravel/laravel.git "./$2";
-        	cd "$2";
+        	    cd "$2";
                 git reset --hard HEAD
 
                 # Do the house cleaning
@@ -20,7 +20,7 @@ else
                 if [ ! "./composer" ]; then
                     echo "Composer not detected. Fetching it..."
                     curl -s https://getcomposer.org/installer | php
-                    sudo mv composer.phar /usr/bin/composer;
+                    sudo mv composer.phar /usr/local/bin/composer
                     echo "Composer now available as a command."
                 fi
         		sudo composer self-update
