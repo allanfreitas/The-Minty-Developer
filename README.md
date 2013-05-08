@@ -35,7 +35,7 @@ This script is meant to be run **once** after a fresh install of Linux Mint 13/1
 
 ## What's included?
 
-This script includes software sources from [Webupd8.org][webupd8], essential development tools and libraries such as Git, Sublime Text 2, ReText Markdown Editor, all the Vim you can get, Gedit extensions, **LAMP STACK**, RVM, latest Ruby, NVM and Node.js, Python, Oracel JAVA, Vagrant, necessary fonts and a graphic design suit and a custom .bashrc file with sensible aliases for common terminal commands.
+This script includes software sources from [Webupd8.org][webupd8], essential development tools and libraries such as Git, Sublime Text 2, ReText Markdown Editor, all the Vim you can get, Gedit extensions, **LAMP STACK**, RVM, latest Ruby, NVM and Node.js, Python, ORACLE JAVA, Vagrant, necessary fonts and a graphic design suit and a custom .bashrc file with sensible aliases for common terminal commands.
 
 The script sets user permissions so that the user wont need to type his password each time he runs sudo. It installs these packages, creates project folders for github projects and a sites folder in your home folder, sets the necessary permissions for the sites folder for you to use as an Apache2 userdir folder for easy creation of mutiple web development projects.
 
@@ -58,7 +58,7 @@ Commits you will make using Git will contain the name and the email you provide.
 After that you will be asked for your root password.
 Just enter you root password.
 
-You will be asked to accept the ORACEL Java licence. In many cases the ORACEL Java compiler is depended on over OpenJDK. Like for users of Aptana Studio. Just accept.
+You will be asked to accept the ORACLE Java licence. In many cases the ORACLE Java compiler is depended on over OpenJDK. Like for users of Aptana Studio. Just accept.
 
 You will be asked to accept the Microsoft font licence since many important Microsoft fonts will be installed. Just accept.
 
