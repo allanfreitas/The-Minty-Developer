@@ -257,7 +257,7 @@ sudo apt-fast -y install transmageddon guvcview wavpack mppenc faac flac vorbis-
 sudo apt-fast -y install nmap netpipe-tcp preload lm-sensors hardinfo fortune-mod libnotify-bin terminator googleearth-package lsb-core ttf-mscorefonts-installer mint-flashplugin 
 sudo apt-fast -y install jupiter alien debhelper intltool intltool-debian istanbul lintian po-debconf anjuta intltool aptdaemon gparted gedit gedit-plugins rabbitvcs-gedit 
 sudo apt-fast -y install nemo nemo-data nemo-share nemo-fileroller rabbitvcs-nautilus vim-puppet cream vim-conque vim-addon-manager vim-vimoutliner vim-scripts supercollider-vim
-sudo apt-fast -y install vim-syntax-gtk vim-gui-common vim-gtk gimp gimp-data gimp-data-extras gimp-lensfun abr2gbr gimp-gmic pandora gimp-ufraw inkscape ink-generator shutter umlet clipit retext
+sudo apt-fast -y install vim-syntax-gtk vim-gui-common vim-gtk gimp gimp-data gimp-data-extras gimp-lensfun abr2gbr gimp-gmic pandora gimp-ufraw inkscape ink-generator shutter dia dia2code dia-shapes clipit retext
 
 
 # make nemo restart so it doesn't screw the rest of the process up
