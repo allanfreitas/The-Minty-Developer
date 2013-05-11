@@ -159,19 +159,19 @@ if ask "Do you want your system tweaked? " Y; then
       expect -c '
         spawn su -c "rm /etc/initramfs-tools/conf.d/resume"
         expect "Password:"
-        send "gulur.123\r"
+        send "$env(passwd)\r"
         interact
       '
       expect -c '
         spawn su -c "touch /etc/initramfs-tools/conf.d/resume"
         expect "Password:"
-        send "gulur.123\r"
+        send "$env(passwd)\r"
         interact
       '
       expect -c '
         spawn su -c "echo \"$env(hashed_string)\" >> /etc/initramfs-tools/conf.d/resume"
         expect "Password:"
-        send "gulur.123\r"
+        send "$env(passwd)\r"
         interact
       '
     fi
