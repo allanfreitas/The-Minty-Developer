@@ -233,13 +233,13 @@ sudo apt-fast -y install playonlinux
 if [[ $account == "yes" ]]; then
 
     sudo apt-fast -y install grive
-    mkdir -p ~/grive && cd grive
+    mkdir -p ~/Grive && cd Grive
 
     # install grive - Linux Google Drive client on the Desktop
     echo ""
-    echo -e " ${bright_yellow}--- Setting up Grive - A Linux Google Drive Desktop Client ---"
-    echo -e " ${bright_yellow}--- Right-click the provided link below and select to open in a browser and follow the instructions. --- "
-    echo -e " ${bright_yellow}--- Grive needs to sync your Google Drive with the grive folder."
+    echo -e "${bright_yellow} *** Setting up Grive - A Linux Google Drive Desktop Client ***"
+    echo -e " --- Right-click the provided link below and select to open in a browser and follow the instructions. --- "
+    echo -e " --- Grive needs to sync your Google Drive with the grive folder."
     echo ""
     grive -a
 
